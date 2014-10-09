@@ -19,6 +19,6 @@
 	<parameter name="oauthRefreshToken" />
 	<sequence>
 		<class
-			name="org.wso2.carbon.connector.googlespreadsheet.GoogleSpreadsheetConfig" />
+			name="org.wso2.carbon.connector.googlespreadsheet.GoogleSpreadsheetOAuth2Config" />
 	</sequence>
 </template>

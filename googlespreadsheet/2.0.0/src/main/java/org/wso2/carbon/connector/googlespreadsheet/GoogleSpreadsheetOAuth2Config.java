@@ -53,8 +53,8 @@ public class GoogleSpreadsheetOAuth2Config extends AbstractConnector {
 			String refreshToken = GoogleSpreadsheetUtils.lookupFunctionParam(
 					messageContext, REFRESH_TOKEN);
 
-			GoogleSpreadsheetUtils.storeLoginUser(messageContext, consumerKey,
-					consumerSecret, accessToken, refreshToken);
+			GoogleSpreadsheetUtils.storeLoginUserOAuth2(messageContext,
+					consumerKey, consumerSecret, accessToken, refreshToken);
 
 		} catch (Exception e) {
 			log.error("Failed to login user: " + e.getMessage(), e);
